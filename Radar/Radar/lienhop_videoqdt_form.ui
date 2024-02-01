@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Lienhop_Videoqdt_Form</class>
+ <widget class="QWidget" name="Lienhop_Videoqdt_Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>638</width>
+    <height>444</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#Lienhop_Videoqdt_Form {
+background-color: rgb(80, 80, 80);
+border-radius: 10px;
+border-width: 2;
+border-style: solid;
+border-color: rgb(255, 255, 255);
+}
+QGroupBox {
+border-radius: 5px;
+border-width: 2;
+border-style: solid;
+border-color: rgb(255, 255, 255);
+}
+* {
+color: white;
+}</string>
+  </property>
+  <widget class="QLabel" name="label_17">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>11</y>
+     <width>620</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>100000</width>
+     <height>23</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">padding-left: 30;
+color: white;</string>
+   </property>
+   <property name="text">
+    <string notr="true">VIDEO QUANG ĐIỆN TỬ</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>620</width>
+     <height>397</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame#frame {
+background-color: rgb(120, 120, 120);
+border-radius: 5px;
+border-width: 0;
+}
+QGroupBox {
+margin-top: 7;
+}
+QGroupBox::title {
+top: -8;
+left: 24;
+padding-left: 10px;
+padding-right: 10px;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

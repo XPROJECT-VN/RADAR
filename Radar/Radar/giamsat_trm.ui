@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GiamSat_TRM_Form</class>
+ <widget class="QWidget" name="GiamSat_TRM_Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>638</width>
+    <height>444</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>638</width>
+    <height>444</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>638</width>
+    <height>444</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#GiamSat_TRM_Form {
+background-color: rgb(80, 80, 80);
+border-radius: 10px;
+border-width: 2;
+border-style: solid;
+border-color: rgb(255, 255, 255);
+}
+QGroupBox {
+border-radius: 5px;
+border-width: 2;
+border-style: solid;
+border-color: rgb(255, 255, 255);
+}
+* {
+color: white;
+font-weight: bold;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label_17">
+     <property name="maximumSize">
+      <size>
+       <width>100000</width>
+       <height>23</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">padding-left: 30;
+color: white;</string>
+     </property>
+     <property name="text">
+      <string notr="true">GIÁM SÁT TRM</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="styleSheet">
+      <string notr="true">QFrame#frame {
+background-color: rgb(120, 120, 120);
+border-radius: 5px;
+border-width: 0;
+}
+QGroupBox {
+margin-top: 7;
+}
+QGroupBox::title {
+top: -8;
+left: 24;
+padding-left: 10px;
+padding-right: 10px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

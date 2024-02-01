@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:\\Qt\\Qt5.12.12\\5.12.12\\mingw73_64\\include\\**",
+                "${workspaceFolder}/../build-Radar_Qt-Desktop_Qt_5_12_12_MinGW_32_bit-Debug/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.22000.0",
+            "cStandard": "c17",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}

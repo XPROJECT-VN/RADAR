@@ -1,0 +1,27 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Untitled.png</file>
+        <file>delete.png</file>
+        <file>information.png</file>
+        <file>line-chart.png</file>
+        <file>power.png</file>
+        <file>question.png</file>
+        <file>user.png</file>
+        <file>warning.png</file>
+        <file>down.png</file>
+        <file>up.png</file>
+        <file>map.png</file>
+        <file>topo.png</file>
+        <file>block.png</file>
+        <file>topoez.png</file>
+        <file>topoez50.png</file>
+        <file>topoez100.png</file>
+        <file>xanh_duong-removebg-preview (1).png</file>
+        <file>xanh_duong-removebg-preview (2).png</file>
+        <file>xanh_duong-removebg-preview (3).png</file>
+        <file>xanh_duong-removebg-preview (4).png</file>
+        <file>xanh_duong-removebg-preview (5).png</file>
+        <file>xanh_duong-removebg-preview (6).png</file>
+        <file>xanh_duong-removebg-preview.png</file>
+    </qresource>
+</RCC>
