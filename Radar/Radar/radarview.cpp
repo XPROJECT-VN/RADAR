@@ -88,8 +88,11 @@ void RadarView::resizeEvent(QResizeEvent *event)
 void RadarView::mousePressEvent(QMouseEvent *event)
 {
     QGraphicsView::mousePressEvent(event);
-    QPointF pos = radar->mapFromScene(QCursor::pos());
-    emit mousePressed(pos.x(), pos.y());
+    if(event->button() == Qt::LeftButton){
+        QPointF pos = radar->mapFromScene(QCursor::pos());
+        emit mousePressed(pos.x(), pos.y());
+        std::cout << "f" << std::endl;
+    }
 }
 
 void RadarView::mouseMoveEvent(QMouseEvent *event)
