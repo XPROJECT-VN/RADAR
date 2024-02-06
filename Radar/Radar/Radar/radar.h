@@ -86,6 +86,7 @@ private:
     double visibleRadius;
     bool visibleGeo;
     QTimer *timerScan;
+    void mousePressEvent(QGraphicsSceneMouseEvent *);
 };
 
 #endif // RADAR_H

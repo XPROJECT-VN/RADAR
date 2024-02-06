@@ -1,6 +1,7 @@
 #include "radar.h"
 #include <cmath>
 #include <QConicalGradient>
+#include <iostream>
 
 #define M_PI 3.141592
 
@@ -175,4 +176,10 @@ void Radar::paint(QPainter *painter, const QStyleOptionGraphicsItem *, QWidget *
 //    painter2.setCompositionMode(QPainter::CompositionMode_DestinationOver);
 //    painter2.end();
 //    painter->drawImage(QPoint(centerPoint.rx() - resultImage.width() / 2, centerPoint.ry() - resultImage.height() / 2), resultImage);
+}
+
+
+void Radar::mousePressEvent(QGraphicsSceneMouseEvent *event){
+    QGraphicsItem::mousePressEvent(event);
+    std::cout << "clicked" << std::endl;
 }

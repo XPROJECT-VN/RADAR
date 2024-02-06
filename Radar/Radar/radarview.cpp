@@ -1,9 +1,9 @@
 #include "radarview.h"
 #include <qmath.h>
 #include <QtOpenGL>
+#include <iostream>
 
-RadarView::RadarView(QWidget *parrent) : QGraphicsView(parrent)
-{
+RadarView::RadarView(QWidget *parrent) : QGraphicsView(parrent){
 //    refreshSizeRadar();
     this->scene = new QGraphicsScene(parrent);
     this->scene->addItem(&radarGroupItem);
@@ -88,6 +88,8 @@ void RadarView::resizeEvent(QResizeEvent *event)
 void RadarView::mousePressEvent(QMouseEvent *event)
 {
     QGraphicsView::mousePressEvent(event);
+    QPointF pos = radar->mapFromScene(QCursor::pos());
+    emit mousePressed(pos.x(), pos.y());
 }
 
 void RadarView::mouseMoveEvent(QMouseEvent *event)

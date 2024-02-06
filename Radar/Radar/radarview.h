@@ -3,6 +3,7 @@
 
 #include <QGraphicsView>
 #include <QtWidgets>
+#include <QObject>
 
 #include "radar.h"
 
@@ -10,6 +11,7 @@
 #define RADARVIEW_MIN_SCALE     -80
 
 class Target : public QWidget {
+    Q_OBJECT
 public:
     bool moving = false;
     int topNumber = 0;
@@ -191,6 +193,7 @@ private:
 
 class RadarView : public QGraphicsView
 {
+    Q_OBJECT
 public:
     Radar *radar;
     RadarGroupItem radarGroupItem;
@@ -207,6 +210,8 @@ public:
     void setDegree(double degree);
     void setRpm(int rpm);
     void setPower(bool onOff);
+signals:
+    void mousePressed(double x, double y);
 private:
     int scaleVal = 0;
     QList<AirPort *> airPortList;
